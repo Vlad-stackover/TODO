@@ -7,3 +7,8 @@ class Task(models.Model):
 
     def __str__(self):
         return self.title
+
+    # class Meta:
+    #     verbouse_name = 'TODO_list'
+    #     verbouse_name_plural = 'TODO_lists'
+
