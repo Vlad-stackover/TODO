@@ -16,10 +16,12 @@
 </main>
 <br>
 <p class="lead">Create your Task and folow it. Set up Time to finish task, add to favorites.</p>
-{% for element in task %}
+{% for element in tasks %}
   <div class="div">
-    <h3>{{el.title}}</h3>
-    <p>{{el.task}}</p>  
+    <h3>{{element.title}}</h3>
+    <p>{{element.description}</p>
   </div>
 {% endfor %}
+{{ title }}
+
 {% endblock %}
