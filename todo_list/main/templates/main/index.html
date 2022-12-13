@@ -1,16 +1,25 @@
 {% extends 'main/base.html'%}
 
 {% block title %}
-ToDo
+{{ title }}
 {% endblock %}
 {% block content %}
 <main class="px-3">
+    <br>
     <h2>Your Task.</h2>
 
     <p class="lead">
+        <br>
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
     </p>
 
   </main>
+<br>
 <p class="lead">Create your Task and folow it. Set up Time to finish task, add to favorites.</p>
+{% for element in task %}
+<div class="alert alert-warning mt-2">
+<h3>{{el.title}}</h3>
+    <p>{{el.task}}</p>
+</div>
+{% endfor %}
 {% endblock %}
