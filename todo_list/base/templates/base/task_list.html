@@ -18,12 +18,16 @@
 
 <hr>
 <h1>My To Do List </h1>
-<a href="{% url 'task-create' %}">Add Task</a>
 
-<form method="GET">
+<div class="search-add-wrapper">
+    <form method="GET" style="margin-top: 20px; display: flex;">
     <input type="text" name="search-area" value="{{search_input}}">
     <input type="submit" value="Search">
-</form>
+    </form>
+    <a id="add-link" href="{% url 'task-create' %}">&#x2b;</a>
+</div>
+
+
 
 <div class="task-item-wrapper">
     {% for task in tasks %}
