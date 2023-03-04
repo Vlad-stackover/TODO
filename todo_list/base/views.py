@@ -11,6 +11,7 @@ from django.contrib.auth import login
 
 
 from .models import Task
+from .models import Category
 # Create your views here.
 
 class CustomLoginView(LoginView):

@@ -14,3 +14,6 @@ class Task(models.Model):
 
     class Meta:
         ordering = ['complete']
+
+class Category(models.Model):
+    type = models.CharField(max_length=100)
